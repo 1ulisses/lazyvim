@@ -1,5 +1,11 @@
 return {
-  "gbprod/nord.nvim",
+  {
+    "gbprod/nord.nvim",
+    opts = {
+      transparent = true,
+      borders = true,
+    },
+  },
   {
     "LazyVim/LazyVim",
     opts = {
