@@ -172,7 +172,7 @@ return {
     event = "VeryLazy",
     opts = function()
       return {
-        --[[add your custom lualine config here]]
+        theme = "pywal16-nvim",
       }
     end,
   },
