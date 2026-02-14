@@ -2,8 +2,13 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "nord",
-      colorscheme = "pywal16",
+      colorscheme = "neopywal",
+    },
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = {
+      theme = "neopywal",
     },
   },
 }
