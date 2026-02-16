@@ -7,7 +7,12 @@ return {
     opts = {
       use_wallust = true,
       colorscheme_file = "/home/srch/.cache/wallust/colors_neopywal.vim",
+      terminal_colors = true,
       transparent_background = true,
+      use_palette = {
+        light = "wallust",
+        dark = "wallust",
+      },
       plugins = {
         lazy = true,
         blink_cmp = true,
