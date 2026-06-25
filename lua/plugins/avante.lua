@@ -1,3 +1,5 @@
+local secrets = require("secrets")
+
 return {
   "yetone/avante.nvim",
   event = "VeryLazy",
@@ -9,7 +11,7 @@ return {
     providers = {
       gemini = {
         model = "gemini-2.5-flash",
-        api_key = os.getenv("AQ.Ab8RN6Iqa8abFja38WU0GMbzGkrzo4gXmSn2_NnwfNr4ouBt_w"),
+        api_key = secrets.api_key,
       },
     },
   },
