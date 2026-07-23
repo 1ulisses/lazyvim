@@ -61,7 +61,7 @@ return {
                 -- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
                 cmd = {
 
-                  "/usr/lib/jvm/java-25-openjdk/bin/java", -- or '/path/to/java17_or_newer/bin/java'
+                  "/usr/lib/jvm/java-21-openjdk-amd64/bin/java", -- or '/path/to/java17_or_newer/bin/java'
                   -- depends on if `java` is in your $PATH env variable and if it points to the right version.
 
                   "-javaagent:/home/srch/.local/share/java/lombok.jar",

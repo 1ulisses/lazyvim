@@ -1,15 +1,17 @@
 return {
-  { "mfussenegger/nvim-jdtls" },
   {
-    "mason-org/mason.nvim",
+    "neovim/nvim-lspconfig",
     opts = {
-      ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "flake8",
-        "java-debug-adapter",
-        "java-test",
+      pyright = {
+        settings = {
+          python = {
+            analysis = {
+              autoSearchPaths = false,
+              diagnosticMode = "openFilesOnly",
+              useLibraryCodeForTypes = false,
+            },
+          },
+        },
       },
     },
   },
