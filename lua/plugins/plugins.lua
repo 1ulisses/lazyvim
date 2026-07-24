@@ -25,6 +25,32 @@ return {
           grep = {
             hidden = true,
           },
+          explorer = {
+            icons = {
+              tree = {
+                vertical = "",
+                middle = "",
+                last = "",
+              },
+            },
+            layout = {
+              layout = {
+                position = "right",
+                border = "none",
+                box = "vertical",
+                {
+                  win = "input",
+                  height = 1,
+                  border = "none",
+                  title = "{title} {live} {flags}",
+                },
+                {
+                  win = "list",
+                  border = "none",
+                },
+              },
+            },
+          },
         },
       },
     },
