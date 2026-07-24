@@ -18,6 +18,25 @@ return {
     opts = {
       picker = {
         hidden = true,
+        layouts = {
+          default = {
+            layout = {
+              box = "horizontal",
+              width = 0.8,
+              min_width = 120,
+              height = 0.8,
+              border = "none",
+              {
+                box = "vertical",
+                border = "none",
+                title = "{title} {live} {flags}",
+                { win = "input", height = 1, border = "none" },
+                { win = "list", border = "none" },
+              },
+              { win = "preview", title = "{preview}", border = "none", width = 0.5 },
+            },
+          },
+        },
         sources = {
           files = {
             hidden = true,
@@ -51,6 +70,31 @@ return {
               },
             },
           },
+        },
+      },
+      dashboard = {
+        preset = {
+          header = [[
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠞⢁⠟
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡏⠀⣼⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠞⠉⠀⣀⣠⠃
+⠀⠀⠀⠀⠀⠀⠀⠀ ⣠⠞⠋⢀⡠⠶⠞⠉⠉⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠷⣄⠙⢧⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡠⡼⢀⣼⠃⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠰⡟⣹⣿⠘⠋⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣤⣶⣿⣿⣤⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠩⣿⣿⣳⠏⠀⠀⠀⠀⠀⠀⠀⠀
+⢀⣴⣦⣄⣀⣀⣰⣿⣿⣿⣀⣀⣀⣠⣦⡀⠀⠀⠀
+⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀
+⠈⠿⠒⠘⠉⠉⣿⣿⣿⡋⠈⠉⠃⠽⡿⠋⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢰⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⣼⣿⣷⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⡾⣿⣿⣿⢷⡦⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠈⠺⠿⠕⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ]],
         },
       },
     },
