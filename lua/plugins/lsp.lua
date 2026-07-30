@@ -2,28 +2,17 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      -- make sure mason installs the server
+      diagnostics = {
+        update_in_insert = false,
+      },
       servers = {
         jdtls = {},
       },
       setup = {
         jdtls = function()
-          return true -- avoid duplicate servers
+          return true
         end,
       },
-    },
-  },
-  {
-    "mason-org/mason.nvim",
-    opts = { ensure_installed = { "java-debug-adapter", "java-test" } },
-  },
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = { ensure_installed = { "java" } },
-  },
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
       pyright = {
         settings = {
           python = {
@@ -36,5 +25,13 @@ return {
         },
       },
     },
+  },
+  {
+    "mason-org/mason.nvim",
+    opts = { ensure_installed = { "java-debug-adapter", "java-test" } },
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = { ensure_installed = { "java" } },
   },
 }
