@@ -18,6 +18,11 @@ return {
     opts = {
       picker = {
         hidden = true,
+        win = {
+          input = { border = "none" },
+          list = { border = "none" },
+          preview = { border = "none" },
+        },
         layouts = {
           default = {
             layout = {
@@ -26,49 +31,30 @@ return {
               min_width = 120,
               height = 0.8,
               border = "none",
-              {
-                box = "vertical",
-                border = "none",
-                title = "{title} {live} {flags}",
-                { win = "input", height = 1, border = "none" },
-                { win = "list", border = "none" },
-              },
-              { win = "preview", title = "{preview}", border = "none", width = 0.5 },
+              { box = "vertical", title = "{title} {live} {flags}", { win = "input", height = 1 }, { win = "list" } },
+              { win = "preview", title = "{preview}", width = 0.5 },
             },
           },
         },
         sources = {
-          files = {
-            hidden = true,
-          },
-          grep = {
-            hidden = true,
-          },
+          files = { hidden = true },
+          grep = { hidden = true },
           explorer = {
-            icons = {
-              tree = {
-                vertical = "",
-                middle = "",
-                last = "",
-              },
-            },
+            icons = { tree = { vertical = "", middle = "", last = "" } },
             layout = {
               layout = {
                 position = "right",
-                border = "none",
                 box = "vertical",
-                {
-                  win = "input",
-                  height = 1,
-                  border = "none",
-                  title = "{title} {live} {flags}",
-                },
-                {
-                  win = "list",
-                  border = "none",
-                },
+                border = "none",
+                { win = "input", height = 1, title = "{title} {live} {flags}" },
+                { win = "list" },
               },
             },
+          },
+        },
+        styles = {
+          input = {
+            border = "none",
           },
         },
       },
