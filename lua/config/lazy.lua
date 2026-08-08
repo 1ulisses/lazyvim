@@ -31,7 +31,6 @@ require("lazy").setup({
 
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
@@ -51,8 +50,4 @@ require("lazy").setup({
       },
     },
   },
-})
-
-vim.diagnostic.config({
-  update_in_insert = false,
 })
