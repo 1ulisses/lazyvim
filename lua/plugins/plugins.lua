@@ -18,13 +18,69 @@ return {
     opts = {
       picker = {
         hidden = true,
+        win = {
+          input = { border = "none" },
+          list = { border = "none" },
+          preview = { border = "none" },
+        },
+        layouts = {
+          default = {
+            layout = {
+              box = "horizontal",
+              width = 0.8,
+              min_width = 120,
+              height = 0.8,
+              border = "none",
+              { box = "vertical", title = "{title} {live} {flags}", { win = "input", height = 1 }, { win = "list" } },
+              { win = "preview", title = "{preview}", width = 0.5 },
+            },
+          },
+        },
         sources = {
-          files = {
-            hidden = true,
+          files = { hidden = true },
+          grep = { hidden = true },
+          explorer = {
+            icons = { tree = { vertical = "", middle = "", last = "" } },
+            layout = {
+              layout = {
+                position = "right",
+                box = "vertical",
+                border = "none",
+                { win = "input", height = 1, title = "{title} {live} {flags}" },
+                { win = "list" },
+              },
+            },
           },
-          grep = {
-            hidden = true,
+        },
+        styles = {
+          input = {
+            border = "none",
           },
+        },
+      },
+      dashboard = {
+        preset = {
+          header = [[
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠞⢁⠟
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡏⠀⣼⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠞⠉⠀⣀⣠⠃
+⠀⠀⠀⠀⠀⠀⠀⠀ ⣠⠞⠋⢀⡠⠶⠞⠉⠉⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠷⣄⠙⢧⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡠⡼⢀⣼⠃⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠰⡟⣹⣿⠘⠋⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣤⣶⣿⣿⣤⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠩⣿⣿⣳⠏⠀⠀⠀⠀⠀⠀⠀⠀
+⢀⣴⣦⣄⣀⣀⣰⣿⣿⣿⣀⣀⣀⣠⣦⡀⠀⠀⠀
+⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀
+⠈⠿⠒⠘⠉⠉⣿⣿⣿⡋⠈⠉⠃⠽⡿⠋⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢰⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⣼⣿⣷⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⡾⣿⣿⣿⢷⡦⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠈⠺⠿⠕⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ]],
         },
       },
     },
