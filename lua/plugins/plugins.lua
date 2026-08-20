@@ -18,11 +18,6 @@ return {
     opts = {
       picker = {
         hidden = true,
-        win = {
-          input = { border = "none" },
-          list = { border = "none" },
-          preview = { border = "none" },
-        },
         layouts = {
           default = {
             layout = {
@@ -40,7 +35,7 @@ return {
           files = { hidden = true },
           grep = { hidden = true },
           explorer = {
-            icons = { tree = { vertical = "", middle = "", last = "" } },
+            icons = { tree = { vertical = " ", middle = " ", last = " " } },
             layout = {
               layout = {
                 position = "right",
