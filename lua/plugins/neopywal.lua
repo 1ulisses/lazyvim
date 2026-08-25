@@ -6,7 +6,7 @@ return {
     priority = 1000,
     opts = {
       use_wallust = true,
-      colorscheme_file = "/home/srch/.cache/wallust/colors_neopywal.vim",
+      colorscheme_file = "~/.cache/wallust/colors_neopywal.vim",
       terminal_colors = true,
       transparent_background = true,
       use_palette = {
@@ -59,12 +59,6 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "neopywal",
-    },
-  },
-  {
-    "nvim-lualine/lualine.nvim",
-    opts = {
-      theme = "neopywal",
     },
   },
 }
